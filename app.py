@@ -18,10 +18,10 @@ def index():
         random.shuffle(temp)
         for teamNumber in range(0, 3):
             team[teamNumber][playerNumber] = temp[teamNumber]
-    result = ""
+    result = "Teams:"
     for teamNumber in range(0, 3):
         string = ','.join(str(x) for x in team[teamNumber])
-        result = result + "</br>" + string
+        result = result + "</br>" + teamNumber+". "+string
     return result
 
 if __name__ == "__main__":
