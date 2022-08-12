@@ -21,7 +21,7 @@ def index():
     result = "Teams:"
     for teamNumber in range(0, 3):
         string = ','.join(str(x) for x in team[teamNumber])
-        result = result + "</br>" + teamNumber+". "+string
+        result + "</br>" + str(teamNumber+1)+". "+string
     return result
 
 if __name__ == "__main__":
